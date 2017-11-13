@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
   :main ^:skip-aot test-lein-jupyter.core
   :target-path "target/%s"
+  :plugins [[org.clojars.didiercrunch/lein-jupyter "0.1.9"]]
+;;  :jupyter-options {:jupyter-path "/home/ubuntu/anaconda3/bin/jupyter"}
   :profiles {:uberjar {:aot :all}})

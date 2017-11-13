@@ -12,3 +12,4 @@ pom.xml.asc
 .ipynb_checkpoints
 .vagrant
 *.log
+*.ipynb

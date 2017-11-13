@@ -75,10 +75,10 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get install -y default-jdk language-pack-en python3-setuptools build-essential python3-dev
+    apt-get install -y default-jdk language-pack-en python-setuptools build-essential python-dev
     apt-get install -y tree htop
-    easy_install3 pip
-    pip3 install jupyter
+    easy_install pip
+    pip2 install jupyter
   SHELL
 
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
